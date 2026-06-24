@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--  Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- Your HTML here -->
+        <header>
+            <img src="assets/parrot.png" alt="a colorful parrot " class="parrot">
+            <div>
+                <h1>PollyGlot</h1>
+                <p>Perfect Translation Every Time</p>
+            </div>
+        </header>
+        <main>
+            <section id="translation-app">
+                <div class="container" id="translate">
+                    <h2>Text to translate 👇</h2>
+                    <textarea id="userText" placeholder="How are you ? "></textarea>
+
+                </div>
+                <div class="container" id="theTranslation" >
+                    <h3>Select language 👇</h3>
+                    <select id="usLang">
+                        <option>Arabic</option>
+                        <option>English</option>
+                        <option>German</option>
+                        <option>French</option>
+                        <option>Japanese </option>
+                        <option>Italian</option>
+                        <option>Spanish</option>
+                        <option>Portuguese 🇵🇹</option>
+                        <option>Russian 🇷🇺</option>
+                        <option>Chinese (Simplified) 🇨🇳</option>
+                        <option>Hindi 🇮🇳</option>
+                    </select>
+                </div>
+            </section>
+            <button id="transBtn">Translate</button>
+            <footer>
+                <a href="https://x.com/AhmedMoham31843" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-mohamed-b657163a6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/zazzzaa67-rgb" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </footer>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

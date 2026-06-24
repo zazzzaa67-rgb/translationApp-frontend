@@ -1,0 +1,127 @@
+* , *::after , *::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    display : flex;
+    gap : 3rem;
+    background-image: url("assets/worldmap.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width : 100%;
+    justify-content: center;
+    color: #ffffff;
+    padding: .5rem 1rem;
+    height: 25vh;
+    
+}
+header h1{
+    margin-bottom: .5rem;
+    color : #32CD32;
+
+    
+}
+.parrot{
+    width : 30%;
+    max-width: 10rem; 
+    
+}
+main {
+    width: 100%;
+}
+#translation-app{
+    width : 92%; 
+    max-width:29rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border : solid 4px black;
+    border-radius: .4rem;
+    margin: 20px auto;
+    height: 60vh;
+    gap : 2rem ;
+}
+.container{
+    display : flex ; 
+    margin : .7rem auto ; 
+    flex-direction: column;
+    color : #035A9D;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.container textarea{
+    outline: none;
+    border : none;
+    padding : .2rem .4rem ;
+    height: 5rem;
+    background-color: #EFF0F4;
+    width : 90%;
+    resize: none;
+    font-weight: 800;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+
+
+}
+.container h3{
+    font-size: 1.5rem;
+}
+#usLang{
+    height: 3.2rem;
+    font-weight: 600;
+    width : 90%;
+    border: 2px solid #808080;
+    color : #929292;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 3px;
+
+}
+footer{
+    margin-bottom: 0;
+    background-color:#EFF0F4 ;
+    font-weight: bold ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+#transBtn{
+    display: block;
+    width : 90%; 
+    max-width: 28rem;
+    background-color: #035A9D;
+    padding : .8rem 1rem ; 
+    border-radius: .5rem;
+    font-weight: 800;
+    color : #ffffff;
+    font-size: 1.2rem;
+    margin : 1rem auto; 
+    cursor: pointer;
+}
+.fa-linkedin{
+    color : #0A66C2
+}
+.fa-x-twitter{
+    color : #000000;
+}
+.fa-github{
+    color : #24292e;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
