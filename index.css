@@ -32,6 +32,7 @@ header h1{
 .parrot{
     width : 30%;
     max-width: 10rem; 
+    max-height: 10rem;
     
 }
 main {
