@@ -18,6 +18,11 @@ transBtn.addEventListener("click" ,async function(){
             const data = await res.json()
             console.log(data)
             html = data.replay
+            translation.innerHTML = `
+            <h3> Your transition</h3>
+            <div class="textCon">
+                ${html} 
+            </div>`
             transBtn.textContent = "Start Over"
             transBtn.id = "Start-Over"
             
@@ -26,19 +31,14 @@ transBtn.addEventListener("click" ,async function(){
                 console.error("An error occurred")
                 html = "</p class='wrong text'>Opps , server proplem</p>"
             }
-    }else{
-        translation.innerHTML = "<p class='text select'>Please,select the your text and the language</p>"
-
-
-}
-translation.innerHTML = `
-<h3> Your transition</h3>
-<div class="textCon">
-    ${html} 
-</div>`
-
-
-
+    }else {
+        // 3. لو الخانات فاضية: بنطبع التنبيه، وبنخليه يختفي ويرجع الـ select بعد 900ms
+        translation.innerHTML = "<p class='text select'>Please, select your text and the language</p>"
+        
+        setTimeout(function(){
+            translation.innerHTML = select.innerHTML
+        }, 900)
+    }
 })
 document.addEventListener("click" , e=>{
     if(e.target.id == "Start-Over"){
