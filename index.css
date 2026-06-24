@@ -140,6 +140,6 @@ footer{
 }
 @media(min-width : 500px ){
     header{
-        height: 38vh;
+        height: 500px;
     }
 }
