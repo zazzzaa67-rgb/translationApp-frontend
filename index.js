@@ -32,9 +32,7 @@ transBtn.addEventListener("click" ,async function(){
                 html = "</p class='wrong text'>Opps , server proplem</p>"
             }
     }else {
-        // 3. لو الخانات فاضية: بنطبع التنبيه، وبنخليه يختفي ويرجع الـ select بعد 900ms
         translation.innerHTML = "<p class='text select'>Please, select your text and the language</p>"
-        
         setTimeout(function(){
             translation.innerHTML = select.innerHTML
         }, 900)
