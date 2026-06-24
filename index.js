@@ -7,7 +7,7 @@ transBtn.addEventListener("click" ,async function(){
         let html = ''
         if(userText && translang){
         try{
-        html = `
+        translation.innerHTML = `
         <p class="loading">Loading...</p>`
         const res= await fetch("https://translation-app-backend-five.vercel.app/api/chat" , {
             method : "POST",
@@ -28,7 +28,10 @@ transBtn.addEventListener("click" ,async function(){
             html = "</p class='wrong text'>Opps , server proplem</p>"
         }
     }else{
-        html = "<p class='text select'>Please,select the land or your text"
+        html = "<p class='text select'>Please,select the your text and the language</p>"
+        setTimeout(function(){
+            translation.innerHTML = select.innerHTML
+        } , 600)
 
 
 }
@@ -43,7 +46,9 @@ translation.innerHTML = `
 })
 document.addEventListener("click" , e=>{
     if(e.target.id == "Start-Over"){
-        translation.innerHTML = select
+        translation.innerHTML = select.innerHTML
         e.id = "transBtn"
+        transBtn.textContent = "Translate"
+        document.getElementById("userText").value = ''
     }
 })
