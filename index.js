@@ -29,8 +29,8 @@ transBtn.addEventListener("click" ,async function(){
     }else{
         translation.innerHTML = "<p class='text select'>Please,select the your text and the language</p>"
         setTimeout(function(){
+            translation.innerHTML = select.innerHTML
         } , 900)
-        translation.innerHTML = select.innerHTML
 
 
 }
