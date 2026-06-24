@@ -12,7 +12,6 @@ transBtn.addEventListener("click" ,async function(){
         const res= await fetch("https://translation-app-backend-five.vercel.app/api/chat" , {
             method : "POST",
             headers:  {  'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_TOKEN_HERE',
         'X-Custom-Header': 'CustomValue'},
             body : JSON.stringify({prompt :userText,lang : translang})
         })
@@ -31,7 +30,7 @@ transBtn.addEventListener("click" ,async function(){
         html = "<p class='text select'>Please,select the your text and the language</p>"
         setTimeout(function(){
             translation.innerHTML = select.innerHTML
-        } , 600)
+        } , 800)
 
 
 }
