@@ -60,7 +60,7 @@ main {
     align-items: center;
 
 }
-.container textarea{
+.container textarea , .textCon{
     outline: none;
     border : none;
     padding : .2rem .4rem ;
@@ -98,7 +98,7 @@ footer{
     align-items: center;
     height: 8vh;
 }
-#transBtn{
+.transBtn{
     display: block;
     width : 90%; 
     max-width: 28rem;
@@ -124,4 +124,10 @@ footer{
 .fa-brands{
     font-size: 1.5rem;
     margin-bottom: 0;
+}
+#select{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -4,11 +4,9 @@
         <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--  Font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
             integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -16,7 +14,6 @@
             rel="stylesheet">
     </head>
     <body>
-        <!-- Your HTML here -->
         <header>
             <img src="assets/parrot.png" alt="a colorful parrot " class="parrot">
             <div>
@@ -32,23 +29,25 @@
 
                 </div>
                 <div class="container" id="theTranslation" >
-                    <h3>Select language 👇</h3>
-                    <select id="usLang">
-                        <option>Arabic</option>
-                        <option>English</option>
-                        <option>German</option>
-                        <option>French</option>
-                        <option>Japanese </option>
-                        <option>Italian</option>
-                        <option>Spanish</option>
-                        <option>Portuguese 🇵🇹</option>
-                        <option>Russian 🇷🇺</option>
-                        <option>Chinese (Simplified) 🇨🇳</option>
-                        <option>Hindi 🇮🇳</option>
-                    </select>
+                    <div id="select">
+                        <h3>Select language 👇</h3>
+                        <select id="usLang">
+                            <option>Arabic</option>
+                            <option>English</option>
+                            <option>German</option>
+                            <option>French</option>
+                            <option>Japanese </option>
+                            <option>Italian</option>
+                            <option>Spanish</option>
+                            <option>Portuguese 🇵🇹</option>
+                            <option>Russian 🇷🇺</option>
+                            <option>Chinese (Simplified) 🇨🇳</option>
+                            <option>Hindi 🇮🇳</option>
+                        </select>
+                    </div>
                 </div>
             </section>
-            <button id="transBtn">Translate</button>
+            <button id="transBtn" class="transBtn">Translate</button>
             <footer>
                 <a href="https://x.com/AhmedMoham31843" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/ahmed-mohamed-b657163a6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
